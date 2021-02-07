@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Secret_PSW_DEF_Base.srcs/sources_1/new/SWITCH.vhd" \
+"../../../../Secret_PSW_DEF_Base.srcs/sim_1/new/SWITCHES_tb.vhd" \
+
+# Do not sort compile order
+nosort

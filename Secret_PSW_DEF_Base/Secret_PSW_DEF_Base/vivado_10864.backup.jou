@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Feb  6 13:54:03 2021
+# Process ID: 10864
+# Current directory: C:/Users/Joaquín/Downloads/Trabajo_VHDL/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12872 C:\Users\Joaquín\Downloads\Trabajo_VHDL\Secret_PSW_DEF_Base\Secret_PSW_DEF_Base\Secret_PSW_DEF_Base.xpr
+# Log file: C:/Users/Joaquín/Downloads/Trabajo_VHDL/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base/vivado.log
+# Journal file: C:/Users/Joaquín/Downloads/Trabajo_VHDL/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Joaquín/Downloads/Trabajo_VHDL/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source CLK_CONTROL_tb.tcl
+run all
+close_sim
+launch_simulation
+source CLK_CONTROL_tb.tcl
+run all
+close [ open C:/Users/Joaquín/Downloads/Trabajo_VHDL/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base.srcs/sources_1/new/SWITCHES_tb.vhd w ]
+add_files C:/Users/Joaquín/Downloads/Trabajo_VHDL/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base.srcs/sources_1/new/SWITCHES_tb.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Switches [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Switches [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top_arch Behavioral [get_filesets sim_1]
+set_property top_file C:/Users/Joaquín/Downloads/Trabajo_VHDL/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base.srcs/sources_1/new/SWITCH.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim

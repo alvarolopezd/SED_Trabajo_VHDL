@@ -1,0 +1,93 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Feb  4 12:51:21 2021
+| Host         : MiPc running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    15 |
+|    Minimum number of control sets                        |    15 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    46 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    15 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     6 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             158 |           58 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              24 |            6 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               4 |            2 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+--------------------------------------------------+------------------+------------------+----------------+--------------+
+|              Clock Signal              |                   Enable Signal                  | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------+--------------------------------------------------+------------------+------------------+----------------+--------------+
+|  Inst_FSM/ayuda_flanco_reg_i_2_n_1     |                                                  |                  |                1 |              1 |         1.00 |
+|  Inst_FSM/error_pasw_reg_i_2_n_1       |                                                  |                  |                1 |              1 |         1.00 |
+|  CLK_t_IBUF_BUFG                       |                                                  |                  |                1 |              1 |         1.00 |
+|  CLK_mod_BUFG                          | Inst_FSM/FSM_sequential_current_state[3]_i_1_n_1 | Inst_RESET/AR[0] |                2 |              4 |         2.00 |
+|  CLK_mod_BUFG                          |                                                  | Inst_SW0/SW0_mod |                1 |              5 |         5.00 |
+|  Inst_FSM/VAL_DISPLAY_1_reg[6]_i_2_n_1 |                                                  |                  |                3 |              7 |         2.33 |
+|  Inst_FSM/current_pasw_reg[13]_i_2_n_1 |                                                  |                  |                3 |              7 |         2.33 |
+|  Inst_FSM/ayuda_numero                 |                                                  |                  |                2 |              7 |         3.50 |
+|  Inst_FSM/current_pasw_reg[6]_i_2_n_1  |                                                  |                  |                3 |              7 |         2.33 |
+|  Inst_FSM/current_pasw_reg[20]_i_2_n_1 |                                                  |                  |                2 |              7 |         3.50 |
+|  Inst_FSM/current_pasw_reg[27]_i_2_n_1 |                                                  |                  |                2 |              7 |         3.50 |
+|  CLK_t_IBUF_BUFG                       |                                                  | Inst_CLK/clear   |                5 |             19 |         3.80 |
+|  Inst_FSM/VAL_DISPLAY_2_reg[6]_i_2_n_1 |                                                  |                  |                9 |             21 |         2.33 |
+|  n_0_102_BUFG                          |                                                  |                  |               10 |             32 |         3.20 |
+|  CLK_mod_BUFG                          |                                                  |                  |               21 |             60 |         2.86 |
++----------------------------------------+--------------------------------------------------+------------------+------------------+----------------+--------------+
+
+

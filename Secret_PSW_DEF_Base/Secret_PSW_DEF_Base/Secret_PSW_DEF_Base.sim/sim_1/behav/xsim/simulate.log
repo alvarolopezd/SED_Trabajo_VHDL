@@ -1,0 +1,5 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Failure: [SUCCESS]: simulation finished.
+Time: 40 s  Iteration: 0  Process: /SWITCHES_tb/line__74  File: C:/Users/Joaquín/Downloads/Trabajo_VHDL/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base.srcs/sim_1/new/SWITCHES_tb.vhd
+$finish called at time : 40 s : File "C:/Users/Joaquín/Downloads/Trabajo_VHDL/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base/Secret_PSW_DEF_Base.srcs/sim_1/new/SWITCHES_tb.vhd" Line 79
